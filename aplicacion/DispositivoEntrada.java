@@ -1,30 +1,35 @@
-public class DispositivoEntrada{
-    //ATRIBUTOS
-    //tipo de elemento de entrada al dispositivo
+public class DispositivoEntrada {
+    // ATRIBUTOS
+    // tipo de elemento de entrada al dispositivo
     private String tipoEntrada;
-    //marca del dispositivo
+    // marca del dispositivo
     private String marca;
-    //CONSTUCTOR
-    public DispositivoEntrada(String nTipo, String nMarca){
-	tipoEntrada = nTipo;
-	marca = nMarca;
-    }
-    //METODOS
-    public String darTipo(){
-	return tipoEntrada;
+
+    // CONSTUCTOR
+    public DispositivoEntrada(String nTipo, String nMarca) {
+        tipoEntrada = nTipo;
+        marca = nMarca;
     }
 
-    public String darMarca(){
-	return marca;
+    // METODOS
+    public String darTipo() {
+        return tipoEntrada;
     }
-    public void setMarca(String nMarca){
-	marca = nMarca;
+
+    public String darMarca() {
+        return marca;
     }
-    public void setTipo(String nTipo){
-	tipoEntrada = nTipo;
+
+    public void setMarca(String nMarca) {
+        marca = nMarca;
     }
-    @Overrride
-    public String toString(){
-	return "DispositivoEntrada{"+"tipoEntrada" + tipoEntrada + ", Marca" +marca"}";
+
+    public void setTipo(String nTipo) {
+        tipoEntrada = nTipo;
+    }
+
+    @Override
+    public String toString() {
+        return "DispositivoEntrada{" + "tipoEntrada" + tipoEntrada + ", Marca" + marca + "}";
+    }
 }
-
