@@ -10,6 +10,6 @@ public class Teclado extends DispositivoEntrada{
     //METODOS
     public String toString(){
 	
-	return "Teclado {"+ "idTeclado ="+ idTeclado+","+ super.toString() "}"
+	return "Teclado {"+ "idTeclado ="+ idTeclado+","+ super.toString() +"}";
     }
 }
