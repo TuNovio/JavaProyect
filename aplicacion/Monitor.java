@@ -1,35 +1,40 @@
-public class Monitor{
-    //ATRIBUTOS
-    private final idMonitor;
+public class Monitor {
+    // ATRIBUTOS
+    private final int idMonitor;
     private String marcaMonitor;
     private double tamañoMonitor;
     private static int contador;
-    //CONSTRUCTOR
-    private Monitor(){
-	idMonitor = ++Monitor.contador;
+
+    // CONSTRUCTOR
+    public Monitor(String nMarcaM, double nTamaño) {
+        idMonitor=++Monitor.contador;
+        marcaMonitor = nMarcaM;
+        tamañoMonitor = nTamaño;
     }
-    public Monitor(String nMarcaM, double nTamaño){
-	marcaMonitor = nMarcaM;
-	tamañoMonitor = nTamaño;
+
+    // METODOS
+    public int darIde() {
+        return idMonitor;
     }
-    //METODOS
-    public int darIde(){
-	return idMonitor;
+
+    public String darMarca() {
+        return marcaMonitor;
     }
-    public String darMarca(){
-	return marcaMonitor;
+
+    public double darTamaño() {
+        return tamañoMonitor;
     }
-    public double darTamaño(){
-	retunr tamañoMonitor;
+
+    public void setMarca(String nMarca) {
+        marcaMonitor = nMarca;
     }
-    public void setMarca(String nMarca){
-	marcaMonitor = nMarca;
+
+    public void setTamaño(double nTamaño) {
+        tamañoMonitor = nTamaño;
     }
-    public void setTamaño(double nTamaño){
-	tamañoMonitor = nTamaño;
-    }
+
     public String toString(){
 
-	return "Monitor {"+ "idMonitor ="+ idMonitor+","+ super.toString() + "Marca"+ marcaMonitor + "," + "tamaño" + tamañoMonitor"}"
+	return "Monitor {"+ "idMonitor ="+ idMonitor+","+ super.toString() + "Marca"+ marcaMonitor + "," + "tamaño" + tamañoMonitor+"}";
     }
 }
